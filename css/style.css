@@ -1,0 +1,306 @@
+:root {
+    --main-bg-color: #1B769C;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.js-primary-bg {
+    background: var(--main-bg-color);
+}
+
+.js-primary-tx {
+    color: var(--main-bg-color);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+    /* Adjust text color if needed */
+}
+
+.site-title{
+font-weight: bolder !important;
+}
+
+/* Navbar */
+.navbar.sticky-top {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity here */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* General Styles for Values Section */
+#Values .section-title {
+    font-size: 2rem;
+    /* Adjust font size for the section title */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    /* Space below the section title */
+}
+
+#Values .card {
+    border: 1px solid #ddd;
+    /* Add a border for better definition */
+    border-radius: 10px;
+    /* Rounded corners for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    margin-bottom: 1.5rem;
+    /* Space below each card */
+}
+
+#Values .card-body {
+    padding: 2rem;
+    /* Add padding inside the card */
+}
+
+#Values .card-title {
+    font-size: 1.25rem;
+    /* Adjust font size for card titles */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* Space below the card title */
+}
+
+#Values .card-text {
+    color: #555;
+    /* Adjust text color for readability */
+    margin-bottom: 0;
+    /* Remove bottom margin from card text */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    #Values .card {
+        margin-bottom: 1rem;
+        /* Reduced margin on small screens */
+    }
+
+    #Values .card-body {
+        padding: 1.5rem;
+        /* Reduced padding on small screens */
+    }
+
+    #Values .section-title {
+        font-size: 1.5rem;
+        /* Adjust section title size for small screens */
+    }
+}
+
+/* Goals and Purpose */
+.goals-purpose-section .list-unstyled {
+    padding-left: 0;
+}
+
+.goals-purpose-section .list-unstyled li {
+    border-left: 4px solid #212529;
+    /* Blue border color for emphasis */
+    padding-left: 20px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.goals-purpose-section .list-unstyled li i {
+    margin-right: 20px;
+    /* Adjust the spacing between icon and text */
+}
+
+.goals-purpose-section h4 {
+    font-size: 1.25rem;
+    /* Adjust heading size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* Add space below heading */
+}
+
+.goals-purpose-section p {
+    margin: 0;
+    color: #555;
+    /* Adjust text color if needed */
+}
+
+.js-s .fas {
+    color: #212529 !important;
+}
+
+
+
+/* Activities List Styles */
+.activities-list {
+    padding-left: 0;
+}
+
+.activities-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* Space between list items */
+}
+
+.activities-list i {
+    color: #ffffff;
+    /* Primary color for the icon */
+    margin-right: 10px;
+    /* Space between the icon and text */
+}
+
+.activities-list span {
+    font-size: 1rem;
+    /* Adjust font size if needed */
+    color: #ffffff;
+    /* Text color */
+}
+
+.activities-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .activities-list {
+        padding-left: 15px;
+        /* Adjust padding for small screens */
+    }
+
+    .activities-list li {
+        margin-bottom: 0.75rem;
+        /* Reduced margin on small screens */
+    }
+}
+
+/* Team Member Image Styles */
+.team-member-img {
+    width: 200px; /* Adjust the size of the circular image */
+    height: 200px; /* Ensure the height matches the width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures no overflow beyond the circular shape */
+    margin: 0 auto; /* Centers the image within the column */
+    display: flex; /* Flexbox for centering the image */
+    align-items: center; /* Aligns image vertically */
+    justify-content: center; /* Aligns image horizontally */
+    background-color: #f8f9fa; /* Optional: Adds background color to enhance appearance */
+    position: relative; /* Position relative to help with image fitting */
+}
+
+.team-member-img img {
+    width: 100%; /* Makes sure the image covers the container */
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Maintains aspect ratio and covers the container */
+    position: absolute; /* Positions the image absolutely within the container */
+    top: 0;
+    left: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    #Team .col-md-3 {
+        margin-bottom: 1.5rem; /* Space between team members on small screens */
+    }
+}
+
+
+/* Membership and Participation Section Styles */
+#Membership {
+    /* background-color: #f8f9fa; Light background for contrast */
+    background: #1B769C; 
+}
+
+#Membership h4 {
+    font-weight: bold;
+}
+
+#Membership ul li {
+    margin-bottom: 10px;
+}
+
+#Membership ul li i {
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+#Membership a{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+
+/* Custom CTA Button Style */
+.custom-cta-button {
+    background-color: #000; /* Custom color for the button */
+    border-color: #ffffff;
+}
+
+.custom-cta-button:hover {
+    background-color: #867f7f; /* Darker shade on hover */
+    border-color: #000;
+}
+
+
+/* Contact Us Section Styles */
+#Contact {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#Contact h2 {
+    font-weight: bold;
+}
+
+#Contact a {
+    text-decoration: none; /* Remove underline */
+
+}
+
+#Contact a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+#Contact i {
+    display: block; /* Ensure icon is centered above text */
+}
+
+#Contact p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    font-weight: 500;
+}
